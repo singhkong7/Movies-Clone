@@ -1,0 +1,20 @@
+@import "../common//color.scss";
+.header{
+    background-color: $secondary-color;
+    height: 8%;
+    display: flex;
+    padding: 20px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+            h2
+            {
+                color:$font-primary;
+            }
+    img
+    {
+        height:25%;
+        width:25%;
+
+    }
+}
