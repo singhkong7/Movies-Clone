@@ -3,10 +3,12 @@ import MovieListing from "../MovieListing/MovieListing";
 import { fetchAsyncMovies, fetchAsyncShows } from '../redux/Movies/movieSlice';
 import {useDispatch} from "react-redux";
 function Home() {
-    const dispatch = useDispatch()
+    const dispatch = useDispatch();
+    const movieText="Harry";
+    const ShowText="Friends";
     useEffect(() => {
-          dispatch(fetchAsyncMovies());
-          dispatch(fetchAsyncShows());
+          dispatch(fetchAsyncMovies(movieText));
+          dispatch(fetchAsyncShows(ShowText));
     }, [dispatch]);
   return (
     <div>
